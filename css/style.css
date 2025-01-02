@@ -1,0 +1,361 @@
+/* ----------------------------------------
+    STYLE GLOBAL
+---------------------------------------- */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fond clair */
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333; /* Couleur sombre pour la navbar */
+    position: relative;
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+
+.navbar-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #fff;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #00bcd4;
+}
+
+.custom-btn {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.custom-btn:hover {
+    background-color: #008c9e;
+}
+
+/* ----------------------------------------
+    HERO SECTION
+---------------------------------------- */
+.hero {
+    background-color: #0a0909; /* Fond léger pour la section hero */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .hero-title {
+    font-size: 3rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+.hero .email-link {
+    color: #00bcd4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ----------------------------------------
+    ABOUT SECTION
+---------------------------------------- */
+.about {
+    padding: 60px 0;
+    background-color: #fff; /* Fond blanc pour About */
+}
+
+.about h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.profile-list {
+    font-size: 1.1rem;
+}
+
+.profile-list li {
+    margin-bottom: 10px;
+}
+
+.about-image {
+    border-radius: 5px;
+}
+
+/* ----------------------------------------
+    TESTIMONIALS SECTION
+---------------------------------------- */
+.testimonials {
+    padding: 60px 0;
+    background-color: #f9f9f9; /* Fond gris clair */
+}
+
+.testimonials h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.testimonials-thumb {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.testimonials-info h6 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.testimonials-info span {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* ----------------------------------------
+    CONTACT SECTION
+---------------------------------------- */
+.contact {
+    padding: 60px 0;
+    background-color: #f4f4f4; /* Fond gris clair pour la section de contact */
+}
+
+.contact-form {
+    background-color: #fff; /* Fond blanc pour le formulaire de contact */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+}
+
+.contact-form .form-control:focus {
+    border-color: #00bcd4;
+}
+
+.contact-form button {
+    background-color: #00bcd4;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #008c9e;
+}
+
+/* ----------------------------------------
+    SOCIAL LINKS
+---------------------------------------- */
+.social-links a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #333;
+}
+
+.social-links a:hover {
+    color: #00bcd4;
+}
+
+/* ----------------------------------------
+    OWL CAROUSEL
+---------------------------------------- */
+.owl-carousel .owl-nav button {
+    background-color: #00bcd4;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.owl-carousel .owl-nav button:hover {
+    background-color: #008c9e;
+}
+
+/* ----------------------------------------
+    SECTION STYLES (UNIFICATION DE L'ARRIERE-PLAN)
+---------------------------------------- */
+.title-frame {
+    display: inline-block;
+    padding: 15px;
+    background-color: #f8f9fa; /* Couleur douce de fond */
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.email-frame {
+    display: inline-block;
+    padding: 10px;
+    background-color: #d4c712; /* Fond jaune lumineux */
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.email-frame:hover {
+    background-color: #e9ecef; /* Couleur au survol */
+}
+
+/* ----------------------------------------
+    IMAGE CIRCULAIRE
+---------------------------------------- */
+.img-circle {
+    border-radius: 50%;
+    border: 4px solid #333;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ----------------------------------------
+    UNIFICATION DE L'ARRIERE-PLAN DE TOUTES LES SECTIONS
+---------------------------------------- */
+.section {
+    background-color: #fff; /* Unifier le fond blanc pour toutes les sections */
+}
+
+.hero, .about, .testimonials, .contact {
+    background-color: #fff; /* Tous les fonds des sections en blanc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre portée pour un effet moderne */
+    border-radius: 8px; /* Coins arrondis pour plus de fluidité */
+    margin-bottom: 40px;
+}
+
+/* ----------------------------------------
+    MOBILE-FRIENDLY: RESPONSIVE DESIGN
+---------------------------------------- */
+@media (max-width: 991px) {
+    .contact-form {
+        padding: 15px 25px;
+    }
+    .contact-form button {
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Réduire le padding sur mobile pour optimiser l'espace */
+    .contact-form {
+        padding: 10px 15px;
+    }
+    
+    .hero .hero-title {
+        font-size: 2rem;
+    }
+    
+    .contact-form button {
+        width: 100%;
+    }
+
+    .img-circle {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+/*****/
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light gray */
+  }
+  
+  .bg-dark {
+    background-color: #00000032 !important; /* Black background */
+  }
+  
+  .text-white {
+    color: #fff; /* Text color for white text */
+  }
+  
+  /* Hero Section Specific Styles */
+  .hero {
+    background-color: #1f1f20; /* Light gray background for hero section */
+    padding: 60px 0; /* Add some padding for spacing */
+  }
+  
+  .hero-text {
+    text-align: center;
+  }
+  
+  .title-frame {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .email-frame {
+    font-size: 1.1rem; /* Slightly smaller font for email */
+    font-weight: 300;
+  }
+  
+  .rounded-pill {
+    border-radius: 50px; /* Rounded corners */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Add spacing for images */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    border: 3px solid #000; /* Dark border around the image */
+  }
+  
+  .email-link {
+    text-decoration: none; /* Remove underline from the email link */
+  }
+  
+
