@@ -43,26 +43,10 @@
                     </li>
                 </ul>
                 <div class="mt-lg-0 mt-3 mb-4 mb-lg-0">
-                    <button id="downloadBtn" class="custom-btn btn">Télécharger le CV</button>
+                    <a href="images/CV.pdf" id="downloadCV" class="custom-btn btn" download="CV">View the CV</a>
 
-                    <script>
-                        document.getElementById("downloadBtn").addEventListener("click", function() {
-                            // Créer un lien temporaire
-                            var link = document.createElement("a");
-                            
-                            // Définir l'attribut href pour le fichier PDF
-                            link.href = "images/CV.pdf"; // Le chemin du fichier à télécharger
-                            link.download = "CV.pdf"; // Nom du fichier qui sera téléchargé
-                
-                            // Vérifier si le lien est valide et si l'attribut download fonctionne
-                            if (link.href) {
-                                // Simuler le clic sur le lien
-                                link.click();
-                            } else {
-                                alert('Impossible de télécharger le fichier.');
-                            }
-                        });
-                    </script>
+
+                    
                 </div>
                 
                 
