@@ -43,8 +43,29 @@
                     </li>
                 </ul>
                 <div class="mt-lg-0 mt-3 mb-4 mb-lg-0">
-                    <a href="images/CV.pdf" id="downloadCV" class="custom-btn btn" >Télécharger le CV</a>
+                    <button id="downloadBtn" class="custom-btn btn">Télécharger le CV</button>
+
+                    <script>
+                        document.getElementById("downloadBtn").addEventListener("click", function() {
+                            // Créer un lien temporaire
+                            var link = document.createElement("a");
+                            
+                            // Définir l'attribut href pour le fichier PDF
+                            link.href = "images/CV.pdf"; // Le chemin du fichier à télécharger
+                            link.download = "CV.pdf"; // Nom du fichier qui sera téléchargé
+                
+                            // Vérifier si le lien est valide et si l'attribut download fonctionne
+                            if (link.href) {
+                                // Simuler le clic sur le lien
+                                link.click();
+                            } else {
+                                alert('Impossible de télécharger le fichier.');
+                            }
+                        });
+                    </script>
                 </div>
+                
+                
                 
                 
                 
@@ -53,7 +74,7 @@
     </nav>
    
    
-    <section class="hero d-flex flex-column justify-content-center align-items-center" id="intro" style=" background-size: contain; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 700px;">
+    <section class="hero d-flex flex-column justify-content-center align-items-center" id="intro" style="background-image: url('images/back.png'); background-size: contain; background-position: center; background-repeat: no-repeat; width: 100%; min-height: 700px;">
         <div class="container">
             <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12" style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);">
                 <div class="hero-text text-center">
@@ -244,40 +265,68 @@
                 <div class="col-lg-4">
                     <div class="card shadow-sm">
                         <div class="card-header">
-                            <h4 class="mt-4">  Get in touch</h4>
+                            <h4 class="mt-4">Get in touch</h4>
                         </div>
                         <div class="card-body">
+                            <!-- Lien pour le téléphone -->
                             <div class="row mb-2">
                                 <div class="col-2 pt-2 mr-2">
                                     <i class="ti-mobile icon-md"></i>
                                 </div>
                                 <div class="col-10">
-                                    <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (212) 606501330 </span></h6>
+                                    <h6 class="d-inline">Phone : <br> 
+                                        <a href="tel:+212606501330" class="text-muted">+ (212) 606501330</a>
+                                    </h6>
+                                </div>
+                            </div>
+                
+                            
+                            <div class="row mb-2">
+                                <div class="col-1 pt-1 mr-1">
+                                    <i class="ti-map-alt icon-md"></i>
+                                </div>
+                                <div class="col-11">
+                                    <h6 class="d-inline">github : <br> 
+                                        <a href="https://github.com/salaheddineMHJ" target="_blank" class="text-muted">salaheddineMHJ</a>
+                                    </h6>
                                 </div>
                             </div>
                             <div class="row mb-2">
                                 <div class="col-1 pt-1 mr-1">
                                     <i class="ti-map-alt icon-md"></i>
                                 </div>
-                                
+                                <div class="col-11">
+                                    <h6 class="d-inline">linkedin : <br> 
+                                        <a href="https://www.linkedin.com/in/salaheddine-ait-el-mahjoub/" target="_blank" class="text-muted">linkedin</a>
+                                    </h6>
+                                </div>
                             </div>
+                            <!-- Lien pour l'email -->
                             <div class="row mb-4">
                                 <div class="col-1 pt-1 mr-1">
                                     <i class="ti-envelope icon-md"></i>
                                 </div>
                                 <div class="col-11">
-                                    <h6 class="d-inline">Email :<br> <span class="text-muted">aitelmahjoubsalaheddine@gmail.com</span></h6>
+                                    <h6 class="d-inline">Email :<br> 
+                                        <a href="mailto:aitelmahjoubsalaheddine@gmail.com" class="text-muted">aitelmahjoubsalaheddine@gmail.com</a>
+                                    </h6>
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
+                
     
             </div>
         </div>
+
+
+
+
+
+        
     </section>
-    
+
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
