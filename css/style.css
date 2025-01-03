@@ -260,13 +260,13 @@ body {
     UNIFICATION DE L'ARRIERE-PLAN DE TOUTES LES SECTIONS
 ---------------------------------------- */
 .section {
-    background-color: #fff; /* Unifier le fond blanc pour toutes les sections */
+    background-color: #fff; 
 }
 
 .hero, .about, .testimonials, .contact {
-    background-color: #fff; /* Tous les fonds des sections en blanc */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre portée pour un effet moderne */
-    border-radius: 8px; /* Coins arrondis pour plus de fluidité */
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
     margin-bottom: 40px;
 }
 
@@ -311,17 +311,17 @@ body {
   }
   
   .bg-dark {
-    background-color: #00000032 !important; /* Black background */
+    background-color: #00000032 !important; 
   }
   
   .text-white {
-    color: #fff; /* Text color for white text */
+    color: #fff;
   }
   
   /* Hero Section Specific Styles */
   .hero {
-    background-color: #1f1f20; /* Light gray background for hero section */
-    padding: 60px 0; /* Add some padding for spacing */
+    background-color: #1f1f20; 
+    padding: 60px 0; 
   }
   
   .hero-text {
@@ -334,7 +334,7 @@ body {
   }
   
   .email-frame {
-    font-size: 1.1rem; /* Slightly smaller font for email */
+    font-size: 1.1rem; 
     font-weight: 300;
   }
   
@@ -346,16 +346,57 @@ body {
     text-decoration: underline; /* Underline on hover */
   }
   
-  /* Add spacing for images */
+  
   .img-fluid {
     max-width: 100%;
     height: auto;
-    border-radius: 50%; /* Circular image */
-    border: 3px solid #000; /* Dark border around the image */
+    border-radius: 50%; 
+    border: 3px solid #000;
   }
   
   .email-link {
-    text-decoration: none; /* Remove underline from the email link */
+    text-decoration: none; 
   }
-  
+
+
+
+       
+        .hero {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            text-align: center;
+            position: relative; 
+            min-height: 700px; 
+        }
+    
+        .container {
+            height: 100%; /* Prendre toute la hauteur de la section */
+        }
+    
+        .main-text {
+            font-size: 28px;
+            font-weight: bold; 
+            letter-spacing: 2px; 
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+            color: white;
+        }
+    
+        .sub-text {
+            font-size: 18px; 
+            font-style: italic; 
+            letter-spacing: 1px; 
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+            opacity: 0.8; 
+            color: white;
+        }
+    
+        
+    
+        /* Style de l'image */
+        .image-container img {
+            border: 5px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+        }
+   
 
