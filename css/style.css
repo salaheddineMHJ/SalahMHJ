@@ -399,4 +399,43 @@ body {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
         }
    
+/* Style général pour la section */
+.hero {
+    position: relative;
+    color: white;  
+    padding-top: 80px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.main-text {
+    font-size: 3rem; 
+    font-weight: bold; 
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+    margin-bottom: 20px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+
+.sub-text {
+    font-size: 1.5rem; 
+    font-weight: 300; 
+    line-height: 1.6; 
+    opacity: 0.9; 
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+}
+
+
+.hero-text:hover .main-text {
+    color: #ff4081; 
+    transition: color 0.3s ease-in-out;
+}
+
+.hero-text:hover .sub-text {
+    color: #ffeb3b; 
+    transition: color 0.3s ease-in-out;
+}
 
